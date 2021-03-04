@@ -37,35 +37,35 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['nuxt-svg-loader'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-		postcss: {
-			// Add plugin names as key and arguments as value
-			// Install them before as dependencies with npm or yarn
-			plugins: {
-				// Disable a plugin by passing false as value
-				'postcss-url': false,
-				'postcss-nested': {},
-				'postcss-responsive-type': {},
-				'postcss-hexrgba': {},
-				'postcss-import': {},
-				'postcss-calc': {},
-				'postcss-simple-vars': {},
-			},
-			preset: {
-				// Change the postcss-preset-env settings
-				autoprefixer: {},
-			},
-		},
-		filenames: {
-			app: ({ isDev }) => isDev ? '[name].js' : '[contenthash].js',
-			chunk: ({ isDev }) => isDev ? '[name].js' : '[contenthash].js',
-			css: ({ isDev }) => isDev ? '[name].css' : '[contenthash].css',
-			img: ({ isDev }) => isDev ? '[path][name].[ext]' : 'img/[contenthash:7].[ext]',
-			font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[contenthash:7].[ext]',
-			video: ({ isDev }) => isDev ? '[path][name].[ext]' : 'videos/[contenthash:7].[ext]'
-		}
-	},
+    postcss: {
+      // Add plugin names as key and arguments as value
+      // Install them before as dependencies with npm or yarn
+      plugins: {
+        // Disable a plugin by passing false as value
+        'postcss-url': false,
+        'postcss-nested': {},
+        'postcss-responsive-type': {},
+        'postcss-hexrgba': {},
+        'postcss-import': {},
+        'postcss-calc': {},
+        'postcss-simple-vars': {},
+      },
+      preset: {
+        // Change the postcss-preset-env settings
+        autoprefixer: {},
+      },
+    },
+    filenames: {
+      app: ({ isDev }) => (isDev ? '[name].js' : '[contenthash].js'),
+      chunk: ({ isDev }) => (isDev ? '[name].js' : '[contenthash].js'),
+      css: ({ isDev }) => (isDev ? '[name].css' : '[contenthash].css'),
+      img: ({ isDev }) => (isDev ? '[path][name].[ext]' : 'img/[contenthash:7].[ext]'),
+      font: ({ isDev }) => (isDev ? '[path][name].[ext]' : 'fonts/[contenthash:7].[ext]'),
+      video: ({ isDev }) => (isDev ? '[path][name].[ext]' : 'videos/[contenthash:7].[ext]'),
+    },
+  },
 };
