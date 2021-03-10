@@ -10,14 +10,14 @@
               </UIText>
             </UISpacer>
             <UISpacer margin="rem2">
-              <UIText tag="p" has-size="rem3"> I have been doing layout for 4 years. </UIText>
+              <UIText tag="p" has-size="rem3"> I have been doing layout for 4 years.</UIText>
               <UIText tag="p" has-size="rem3">
                 During this time, I made about 80 projects of different complexity and themes.
               </UIText>
               <UIText tag="p" has-size="rem3">
                 I led a team of 2 designers and 5 layout designers.
               </UIText>
-              <UIText tag="p" has-size="rem3">Conducted courses on site layout. </UIText>
+              <UIText tag="p" has-size="rem3">Conducted courses on site layout.</UIText>
             </UISpacer>
             <ul class="about__socials">
               <li class="about__socials-item">
@@ -45,6 +45,58 @@
         </UISpacer>
         <div class="about__image">
           <img src="~/assets/images/itsMe.png" alt="it's me" title="it's me" />
+        </div>
+      </div>
+    </CSections>
+
+    <CSections is-orange>
+      <div class="skills">
+        <UISpacer margin="rem4">
+          <UIText tag="h2" has-size="rem6" has-weight="bold"> My skills</UIText>
+        </UISpacer>
+        <div class="skills__list">
+          <div class="skills__item">
+            <UIIcon size="128" name="html5" title="HTML5"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="jquery" title="Jquery"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="vue" title="VueJS"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="css3" title="CSS3"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="less" title="Less"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="sass" title="Sass"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="postcss" title="PostCSS"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="git" title="Git"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="gulp" title="Gulp"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="webpack" title="Webpack"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="figma" title="Figma"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="adobephotoshop" title="PS"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="adobeillustrator" title="AI"></UIIcon>
+          </div>
+          <div class="skills__item">
+            <UIIcon size="128" name="adobeaftereffects" title="AE"></UIIcon>
+          </div>
         </div>
       </div>
     </CSections>
@@ -97,6 +149,23 @@ export default {
     &:hover {
       color: var(--functional-pink);
     }
+  }
+}
+
+.skills {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -3rem;
+  }
+
+  &__item {
+    margin: 0 3rem 4rem;
+    flex-basis: calc(20% - 6rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>

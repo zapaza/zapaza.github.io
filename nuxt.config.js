@@ -37,7 +37,16 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-svg-loader'],
+  modules: [
+    'nuxt-svg-loader',
+    [
+      'storyblok-nuxt',
+      {
+        accessToken: 'Vo577ulK6GIHPLhrBffUfgtt',
+        cacheProvider: 'memory',
+      },
+    ],
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

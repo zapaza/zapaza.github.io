@@ -3,6 +3,9 @@
     <li class="menu__item">
       <nuxt-link tag="a" to="/" :class="['menu__link']">Главная</nuxt-link>
     </li>
+    <li class="menu__item">
+      <nuxt-link tag="a" to="/articles" :class="['menu__link']">My posts</nuxt-link>
+    </li>
   </ul>
 </template>
 

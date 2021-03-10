@@ -85,6 +85,10 @@ export default {
       font-size: 3rem;
     }
 
+    &-rem6 {
+      font-size: 6rem;
+    }
+
     &-rem8 {
       font-size: 8rem;
     }

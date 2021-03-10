@@ -1,23 +1,41 @@
 <template>
   <div class="page">
-    <CHeader></CHeader>
     <div class="page__content">
+      <CHeader></CHeader>
       <Nuxt />
     </div>
+    <CFooter></CFooter>
   </div>
 </template>
 
 <script>
 import CHeader from '~/components/header/CHeader.vue';
+import CFooter from '~/components/footer/CFooter.vue';
 
 export default {
   components: {
+    CFooter,
     CHeader,
   },
 };
 </script>
 
 <style lang="css">
+@font-face {
+  font-family: 'GoshaSans';
+  src: url('~assets/fonts/GoshaSans-Bold.woff') format('woff'),
+    url('~assets/fonts/GoshaSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GoshaSans';
+  src: url('~assets/fonts/GoshaSans-Regular.woff') format('woff'),
+    url('~assets/fonts/GoshaSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --typo-color-primary: rgb(255, 255, 255);
   --theme-color-primary: rgb(35, 44, 65);
@@ -39,8 +57,9 @@ html {
   background: var(--theme-color-primary);
   color: var(--typo-color-primary);
   font-size: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'GoshaSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
 }
 
 body {

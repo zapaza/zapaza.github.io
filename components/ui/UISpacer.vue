@@ -26,6 +26,10 @@ export default {
     &rem2 {
       margin-bottom: 2rem;
     }
+
+    &rem4 {
+      margin-bottom: 4rem;
+    }
   }
   &_marginRight {
     &_default,

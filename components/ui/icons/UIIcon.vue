@@ -1,5 +1,5 @@
 <template>
-  <Component :is="name" class="icon" :class="[`icon--size-${size}`]" />
+  <Component :is="name" class="icon" :class="[`icon--size_${size}`]" />
 </template>
 
 <script>
@@ -40,8 +40,12 @@ export default {
   width: 1em;
 
   &--size {
-    &-default {
+    &_default {
       font-size: 24px;
+    }
+
+    &_128 {
+      font-size: 128px;
     }
   }
 }

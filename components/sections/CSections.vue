@@ -39,6 +39,7 @@ export default {
   position: relative;
   background-color: var(--theme-color-primary60);
   padding: 6rem;
+  margin-bottom: 8rem;
 
   &::before {
     position: absolute;
