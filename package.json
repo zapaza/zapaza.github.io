@@ -11,7 +11,8 @@
 		"lint:jsfix": "eslint --ext --fix \".js,.vue\" --ignore-path .gitignore .",
 		"lint:stylefix": "stylelint --fix \"**/*.{vue,css}\" --ignore-path .gitignore",
 		"lint": "yarn lint:js && yarn lint:style",
-		"generate-icons": "create-index ./components/ui/icons/src -x js svg -u"
+		"generate-icons": "create-index ./components/ui/icons/src -x js svg -u",
+        "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
 	},
 	"lint-staged": {
 		"*.{js,vue}": "eslint",
@@ -37,6 +38,7 @@
 		"postcss-preset-env": "^6.7.0",
 		"postcss-responsive-type": "^1.0.0",
 		"postcss-simple-vars": "^5.0.2",
+		"push-dir": "^0.4.1",
 		"storyblok-nuxt": "^1.3.0"
 	},
 	"devDependencies": {
