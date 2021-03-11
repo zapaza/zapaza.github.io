@@ -1,18 +1,18 @@
 <template>
   <header class="header">
     <nav class="header__menu">
-      <CMenu></CMenu>
+      <!--      <CMenu></CMenu>-->
     </nav>
   </header>
 </template>
 
 <script>
-import CMenu from '~/components/menu/CMenu.vue';
+// import CMenu from '~/components/menu/CMenu.vue';
 
 export default {
   name: 'CHeader',
   components: {
-    CMenu,
+    // CMenu,
   },
 };
 </script>

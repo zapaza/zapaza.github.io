@@ -24,6 +24,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   // plugins: ['@/plugins/vuesax'],
+  plugins: ['~/plugins/components'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
@@ -50,6 +51,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    router: {
+      base: '/zapaza.github.io/',
+    },
     postcss: {
       // Add plugin names as key and arguments as value
       // Install them before as dependencies with npm or yarn
