@@ -1,4 +1,5 @@
 export default {
+  loading: false,
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -54,9 +55,9 @@ export default {
       '@nuxtjs/yandex-metrika',
       {
         id: '75521296',
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
       },
     ],
   ],
