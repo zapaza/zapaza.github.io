@@ -50,6 +50,15 @@ export default {
         cacheProvider: 'memory',
       },
     ],
+    [
+      '@nuxtjs/yandex-metrika',
+      {
+        id: '75521296',
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+      },
+    ],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
