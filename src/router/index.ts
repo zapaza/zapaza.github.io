@@ -6,6 +6,19 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: {
+      title: "Stas Chumakov",
+      metaTags: [
+        {
+          name: "description",
+          content: "Wait for the new version.",
+        },
+        {
+          property: "og:description",
+          content: "Wait for the new version.",
+        },
+      ],
+    },
   },
   {
     path: "/about",
