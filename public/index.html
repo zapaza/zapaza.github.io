@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <!-- Yandex.Metrika counter -->
@@ -23,6 +23,43 @@
   </head>
   <body>
     <noscript>
+      <style>
+          .spotlights > section > .image:before {
+              opacity: 0 !important;
+          }
+
+          .spotlights > section > .content > .inner {
+              -moz-transform: none !important;
+              -webkit-transform: none !important;
+              -ms-transform: none !important;
+              transform: none !important;
+              opacity: 1 !important;
+          }
+
+          /* Wrapper */
+
+          .wrapper > .inner {
+              opacity: 1 !important;
+              -moz-transform: none !important;
+              -webkit-transform: none !important;
+              -ms-transform: none !important;
+              transform: none !important;
+          }
+
+          /* Sidebar */
+
+          #sidebar > .inner {
+              opacity: 1 !important;
+          }
+
+          #sidebar nav > ul > li {
+              -moz-transform: none !important;
+              -webkit-transform: none !important;
+              -ms-transform: none !important;
+              transform: none !important;
+              opacity: 1 !important;
+          }
+      </style>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
